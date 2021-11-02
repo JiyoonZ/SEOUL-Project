@@ -1,8 +1,50 @@
-    
-  .title {
-    font-family: 'Stretch Pro Regular';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 200px;
+  /* 상단 메뉴바 */
+  head {
+    width: 100%;
+    margin: 0px auto;
+  }
+  a {
+    text-decoration: none;
+  }
+
+  #logo {
+    background-color: #09FF21;
+    width: 214px;
+    height: 68px;
+    display: inline-block;
+    float: left;
+    margin-top: 2%;
+    margin-left: 2%;
     text-align: center;
+    line-height: 68px;
+  }
+  #logo a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .menu {
+    float: right;
+    margin-top: 44px;
+    margin-right: 44px;
+
+  } 
+
+  .menu li {
+    display: inline-block;
+    float: left;
+    margin-left: 32px;
+  }
+  .menu li a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    
+  }
+
+.status { 
+    font-size: 100px;
+    text-align: center;
+    padding-top: 300px;
   }
