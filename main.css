@@ -6,6 +6,9 @@
   a {
     text-decoration: none;
   }
+  body {
+    background-color: black;
+  }
 
   #logo {
     background-color: #09FF21;
@@ -47,4 +50,5 @@
     font-size: 100px;
     text-align: center;
     padding-top: 300px;
+    color:white;
   }
