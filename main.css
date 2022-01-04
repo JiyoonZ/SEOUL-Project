@@ -6,8 +6,12 @@
   a {
     text-decoration: none;
   }
+
   body {
-    background-color: black;
+    background-image: url("/images/gr.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+ 
   }
 
   #logo {
