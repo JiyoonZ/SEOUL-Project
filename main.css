@@ -1,3 +1,4 @@
+
  /* common */
  body {
   /* font-family: 'Stretch Pro Regular', sans-serif; */
@@ -156,6 +157,25 @@
   font-weight: 400;
   margin: 20px 0;
 }
-.section3 .section3-notice .section3-arrow {
-
+.section3 .section3-notice .section3-arrow p{
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+  margin: 90px 0;
 }
+
+ 
+@media (max-width: 1024px) {
+  /* 한줄에 여러요소를 나열하고 싶을때 사용하기  */
+   body {
+     width: 1024px;
+     background-color: yellowgreen;
+   }
+   .content-wrapper{
+    width: 1024px;
+  }
+   .img-contain  {
+      width: 1024px;
+      margin-left: calc(1024px/-2);
+   }
+ }
