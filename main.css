@@ -1,58 +1,161 @@
-  /* 상단 메뉴바 */
-  head {
+ /* common */
+ body {
+  /* font-family: 'Stretch Pro Regular', sans-serif; */
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  color: white;
+  background-color: #000000;
+  
+ }
+ .content-center{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  border: #FF0000 2px solid;
+}
+/* 한줄에 여러요소를 나열하고 싶을때 사용하기  */
+.content-wrapper{
+  width: 1440px;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  border: #FF0000 2px solid;
+}
+.center-img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+ }
+ .img-contain  {
+    width: 1440px;
+    height: 800px;
+    margin-left: calc(1440px/-2);
+    margin-top: calc(800px/-2);
+    position: absolute;
+ }
+ /* 상단 메뉴바 */
+  header {
     width: 100%;
-    margin: 0px auto;
+    height: 70px;
+    /* background-color: orange; */
+    display: flex;
+    position: relative;
   }
-  a {
+  header .title-logo{
+    font-family: 'Stretch Pro Regular', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #FF0000;
+    margin: auto auto;
+    /* background-color: aliceblue; */
+  }
+  header nav{ margin: auto 10px; }
+  header .title-logo .typo{ margin-left: calc((370px)/2); }
+  header .menu { display: flex; }
+  header a {
     text-decoration: none;
-  }
-
-  body {
-    background-image: url("./images/gr.png");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
- 
-  }
-
-  #logo {
-    background-color: #09FF21;
-    width: 214px;
-    height: 68px;
-    display: inline-block;
-    float: left;
-    margin-top: 2%;
-    margin-left: 2%;
-    text-align: center;
-    line-height: 68px;
-  }
-  #logo a {
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-  }
-  .menu {
-    float: right;
-    margin-top: 44px;
-    margin-right: 44px;
-
-  } 
-
-  .menu li {
-    display: inline-block;
-    float: left;
-    margin-left: 32px;
-  }
-  .menu li a {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
+    margin-right: 30px;
+    font-size: 14px;
     color: white;
-    
   }
+  header .menu-el:first-child a{ color: #FF0000; }
+  header .menu-el:hover a{ color: #FF0000; }
+/* 본문내용 */
+/* section home */
+.section-home {
+  background-image: url("./images/home.png");
+  height: 800px;
+  width: 100%;
+}
+/* section1 */
+.section1 {
+  background-image: url("./images/home_section1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 873px;
+}
+.section1 .section1-img {
+  background-image: url("./images/home_section1_img.png");
+  height: 500px;
+  width: 894px;
+  margin-left: calc(894px/-2);
+  margin-top: calc(500px/-2);
+}
+/* section2 */
+.section2 {
+  height: 800px;
+  width: 100%;
+  position: relative;
+}
+.section2 .section2-img1{
+  background-image: url("./images/home_section2_img1.png");
+  height: 579px;
+  width: 328px;
+  position: absolute;
+  top: 22%;
+  left: 100px;
+  z-index: 1;
+}
+.section2 .section2-img2{
+  width: 325px;
+  height: 196px;
+  background-image: url("./images/home_section2_img2.png");
+  background-size: auto 100%;
+  position: absolute;
+  top: 8%;
+  left: 350px;
+}
+.section2 .section2-img3{
+  width: 328px;
+  height: 196px;
+  background-image: url("./images/home_section2_img3.png");
+  position: absolute;
+  top: 10%;
+  left: 1050px;
+}
+.section2 .section2-img4{
+  background-image: url("./images/home_section2_img4.png");
+  width: 671px;
+  height: 401px;
+  position: absolute;
+  top: 42%;
+  left: 710px
+}
 
-.status { 
-    font-size: 100px;
-    text-align: center;
-    padding-top: 300px;
-    color:white;
-  }
+/* section3 */
+.section3 {
+  height: 1188px;
+  width: 100%;
+  background-image: url("./images/home_section3.png");
+  background-position: center;
+  color: black;
+  margin: auto auto;
+  background-color: orange;
+}
+.section3 .section3-notice {
+  border: #FF0000 2px solid;
+  position: absolute;
+  top: 50%;
+}
+.section3 .section3-notice hr {
+  border: 0;
+  height: 2px;
+  background-color: black;
+  width: 1352px;
+}
+.section3 .section3-notice h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 20px 0;
+  
+}
+.section3 .section3-notice p {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 20px 0;
+}
+.section3 .section3-notice .section3-arrow {
+
+}
