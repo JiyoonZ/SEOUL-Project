@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <!-- 폰트 -->
-    <link rel="stylesheet" type="text/css" href="./font/style.css" />
+    <!-- 브라우저 초기화 -->
     <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
     />
+    <!-- 폰트1 -->
+    <link rel="stylesheet" type="text/css" href="./font/style.css" />
+    <!-- 폰트2 -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,11 +23,12 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <!-- css파일 -->
     <link rel="stylesheet" href="./main.css" />
+    <script defer src="./main.js"></script>
   </head>
   <body>
     <!-- 상단바  -->
     <header>
-      <div class="content-wrapper">
+      <div class="content-wrapper font-stretch">
         <div class="title-logo">
           <div class="typo">CYBERPUNKSEOUL</div>
         </div>
@@ -42,13 +45,32 @@
     <!-- section home-->
     <section class="section-home content-center">
       <div class="content-wrapper">
+        <div class="home__text">37°33'58.87"N 126°58'40.63"E</div>
       </div>
     </section>
-    
     <!-- section1-->
     <section class="section1 content-center">
       <div class="content-wrapper">
         <div class="section1-img center-img"></div>
+      </div>
+    </section>
+    <!-- section -->
+    <section class="section content-center font-stretch">
+      <div class="content-wrapper">
+        <div class="section-image">
+          <img class="change" src="./images/inSeoul1.png" alt="">
+        </div>
+        <div class="section-title">
+          <div class="inSeoul">in&nbsp;Seoul</div>
+          <div class="section-sub">
+            <div class="seouls seoul-1">Euljiro</div>
+            <div class="seouls seoul-2">Hongdae</div>
+            <div class="seouls seoul-3">Itaewon</div>
+            <div class="seouls seoul-4">Jamsil</div>
+            <div class="seouls seoul-5">Gangnam</div>
+            <div class="seouls seoul-6">Sadang</div>
+          </div>
+        </div>
       </div>
     </section>
     <!-- section2-->
